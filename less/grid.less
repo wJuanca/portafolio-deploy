@@ -1,0 +1,30 @@
+// grid.less
+@import "variables.less";
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 0 0 23.33%;
+    padding: 10px;
+}
+
+.about-item {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-image {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}

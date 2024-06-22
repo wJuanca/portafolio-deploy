@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="less/estilo.less">
+
+</head>
+
+<body>
+  <main>
+    <aside class="menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contacto">Contactame</a></li>
+      </ul>
+    </aside>
+
+    <section id="inicio">
+      <div class="content">
+        <div class="text">
+          <h2 class="saludo">Hola</h2>
+          <h2 class="nombre">Soy Juan Turcios</h2>
+          <h3 class="subtitulo">ING. en Ciencias de la computacion</h3>
+          <h4>Soy un estudiante de Ingenieria en Ciencias de la Computacion <br>
+            con experiencia en diseno, analisis y programacion de paginas web y software.<br>
+            Destaco en el trabajo en equipo y tengo una capacidad natural para aprender rapidamente.</h4>
+          <a href="https://docs.google.com/document/d/10S2Wl9Pc8KFg1HvOALZ6BzIzK1qNrpaEnjLaUNiCMiE/edit?usp=sharing"
+            target="_blank" class="button">Ver Curriculum</a>
+          <div class="profile-image">
+            <img src="public/img/FotoPerfil.png" alt="Foto de perfil">
+            <div class="icon-container">
+              <img src="public/icons/css-3.png" alt="CSS3">
+              <img src="public/icons/html-5.png" alt="HTML5">
+              <img src="public/icons/js.png" alt="HTML5">
+              <img src="public/icons/davinci.png" alt="Davinci">
+              <img src="public/icons/photoshop.png" alt="Photoshop">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="projects">
+      <div class="row">
+
+        <div class="column">
+          <div class="about-item">
+            <a href="proyecto.html">
+              <img class="about-image" src="public/img/Proyecto-1.jpg" alt="Nombre Imagen 1">
+            </a>
+            <p class="about-name">Sistema de Historial Clinico</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="about-item">
+            <a href="proyecto1.html">
+              <img class="about-image" src="public/img/Proyecto-2.jpg" alt="Nombre Imagen 2">
+            </a>
+            <p class="about-name">Tienda Online</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="about-item">
+            <a href="proyecto2.html">
+              <img class="about-image" src="public/img/Proyecto-3.jpg" alt="Nombre Imagen 3">
+            </a>
+            <p class="about-name">Aplicacion Movil</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="about-item">
+            <a href="proyecto3.html">
+              <img class="about-image" src="public/img/Proyecto-4.jpg" alt="Nombre Imagen 4">
+            </a>
+            <p class="about-name">Diseño Gráfico</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="about-item">
+            <a href="#">
+              <img class="about-image" src="public/img/Coming.jpg" alt="Nombre Imagen 5">
+            </a>
+            <p class="about-name">Proyectos...</p>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="about-item">
+            <a href="#">
+              <img class="about-image" src="public/img/Coming.jpg" alt="Nombre Imagen 6">
+            </a>
+            <p class="about-name">Proyectos...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section id="contacto">
+      <div class="Text-Icons">
+        <h2>Mis Redes</h2>
+
+        <a href="https://www.instagram.com/_juancat/" class="icon-link" target="_blank">
+          <img class="redes" src="public/icons/instagram.png" alt="instagram">
+        </a>
+
+        <a href="https://x.com/wjuanca_" class="icon-link" target="_blank">
+          <img class="redes" src="/icons/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.linkedin.com/in/juanturcios1/" class="icon-link" target="_blank">
+          <img class="redes" src="public/icons/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://github.com/wJuanca" class="icon-link" target="_blank">
+          <img class="redes" src="public/icons/github-sign.png" alt="github">
+        </a>
+      </div>
+
+
+      <form id="contactForm">
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="statusMessage"></div>
+    </section>
+  </main>
+
+  <script src="principal.js"></script>
+
+</body>
+
+</html>
